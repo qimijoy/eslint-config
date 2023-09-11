@@ -1,0 +1,14 @@
+{
+  "name": "@qimijoy/eslint-config",
+  "version": "1.0.0",
+  "description": "My personal ESlint configurations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qimijoy/eslint-config.git"
+  },
+  "author": "qimijoy",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
