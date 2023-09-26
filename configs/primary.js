@@ -66,7 +66,7 @@ module.exports = {
 		"accessor-pairs": "error",
 		"arrow-body-style": ["error", "as-needed"],
 		"block-scoped-var": "error",
-		"camelcase": ["error", {
+		"camelcase": ["warn", {
 			properties: "never",
 			ignoreDestructuring: true,
 			ignoreImports: true,
