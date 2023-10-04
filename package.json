@@ -1,6 +1,6 @@
 {
   "name": "@qimijoy/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "My personal ESlint configurations",
   "repository": {
     "type": "git",
