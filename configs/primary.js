@@ -227,11 +227,11 @@ module.exports = {
 		"sort-imports": ["warn", {
 			"ignoreDeclarationSort": true
 		}],
-		"sort-keys": ["error", "asc", {
-			minKeys: 4
+		"sort-keys": ["warn", "asc", {
+			minKeys: 6
 		}],
 		"sort-vars": "off",
-		"spaced-comment": ["error", "always"],
+		"spaced-comment": "off",
 		"strict": "off",
 		"symbol-description": "warn",
 		"vars-on-top": "warn",
