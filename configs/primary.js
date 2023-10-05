@@ -116,7 +116,7 @@ module.exports = {
 		"max-params": ["error", 4],
 		"max-statements": "off",
 		"multiline-comment-style": "off",
-		"new-cap": "error",
+		"new-cap": "off",
 		"no-alert": "error",
 		"no-array-constructor": "error",
 		"no-bitwise": "warn",
@@ -247,13 +247,7 @@ module.exports = {
 		}],
 		"block-spacing": "error",
 		"brace-style": "error",
-		"comma-dangle": ["error", {
-			"arrays": "never",
-			"objects": "true",
-			"imports": "never",
-			"exports": "never",
-			"functions": "never"
-		}],
+		"comma-dangle": "off",
 		"comma-spacing": ["error", {
 			"before": false,
 			"after": true
