@@ -112,7 +112,7 @@ module.exports = {
 			skipBlankLines: false,
 			skipComments: false
 		}],
-		"max-nested-callbacks": ["error", 4],
+		"max-nested-callbacks": ["warn", 4],
 		"max-params": ["error", 4],
 		"max-statements": "off",
 		"multiline-comment-style": "off",
@@ -151,7 +151,10 @@ module.exports = {
 		"no-lone-blocks": "error",
 		"no-lonely-if": "warn",
 		"no-loop-func": "error",
-		"no-magic-numbers": "warn",
+		"no-magic-numbers": ["warn", {
+			"ignoreArrayIndexes": true,
+			"ignoreDefaultValues": true,
+		}],
 		"no-mixed-operators": "warn",
 		"no-multi-assign": "error",
 		"no-multi-str": "error",
