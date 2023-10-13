@@ -150,10 +150,7 @@ module.exports = {
 		"no-lone-blocks": "error",
 		"no-lonely-if": "warn",
 		"no-loop-func": "error",
-		"no-magic-numbers": ["warn", {
-			"ignoreArrayIndexes": true,
-			"ignoreDefaultValues": true,
-		}],
+		"no-magic-numbers": "off",
 		"no-mixed-operators": "warn",
 		"no-multi-assign": "error",
 		"no-multi-str": "error",
