@@ -93,9 +93,8 @@ module.exports = {
 		"id-denylist": ["error", "err", "e", "cb", "callback"],
 		"id-length": ["error", {
 			min: 1,
-			max: 20,
+			max: 25,
 			properties: "never",
-			exceptions: ["id", "to"],
 		}],
 		"id-match": "off",
 		"init-declarations": "off",
@@ -242,8 +241,8 @@ module.exports = {
 		// Layout & Formatting
 		"array-bracket-newline": ["error", "consistent"],
 		"array-bracket-spacing": ["error", "never"],
-		"array-element-newline": ["error", "never"],
-		"arrow-parens": ["error", "as-needed"],
+		"array-element-newline": ['error', 'consistent'],
+		"arrow-parens": "off",
 		"arrow-spacing": ["error", {
 			"before": true,
 			"after": true,
@@ -266,7 +265,7 @@ module.exports = {
 			"before": true,
 			"after": false
 		}],
-		"implicit-arrow-linebreak": ["error", "beside"],
+		"implicit-arrow-linebreak": "off",
 		"indent": "off",
 		"jsx-quotes": "off",
 		"key-spacing": ["error", {
@@ -321,7 +320,7 @@ module.exports = {
 		"semi-spacing": "error",
 		"semi-style": ["error", "last"],
 		"space-before-blocks": "error",
-		"space-before-function-paren": "error",
+		"space-before-function-paren": ["error", "never"],
 		"space-in-parens": ["error", "never"],
 		"space-infix-ops": "error",
 		"space-unary-ops": "off",
@@ -329,7 +328,7 @@ module.exports = {
 			"after": true,
 			"before": false
 		}],
-		"template-curly-spacing": ["warn", "always"],
+		"template-curly-spacing": "off",
 		"template-tag-spacing": "off",
 		"unicode-bom": ["error", "never"],
 		"wrap-iife": ["error", "outside"],
