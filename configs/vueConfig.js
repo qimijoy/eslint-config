@@ -170,14 +170,7 @@ module.exports = {
 			svg: "always",
 			math: "always"
 		}],
-		"vue/max-attributes-per-line": ["error", {
-			singleline: {
-				"max": 4,
-			},
-			multiline: {
-				"max": 1,
-			}
-		}],
+		"vue/max-attributes-per-line": "off",
 		"vue/multiline-html-element-content-newline": ["error", {
 			ignoreWhenEmpty: true,
 			ignores: ["pre", "textarea"],
