@@ -137,10 +137,7 @@ module.exports = {
 		// Strongly recommended
 		"vue/attribute-hyphenation": "off",
 		"vue/component-definition-name-casing": ["error", "PascalCase"],
-		"vue/first-attribute-linebreak": ["error", {
-			singleline: "ignore",
-			multiline: "beside",
-		}],
+		"vue/first-attribute-linebreak": "off",
 		"vue/html-closing-bracket-newline": ["error", {
 			singleline: "never",
 			multiline: "always",
