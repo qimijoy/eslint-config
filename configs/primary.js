@@ -91,7 +91,7 @@ module.exports = {
 		"grouped-accessor-pairs": ["warn", "getBeforeSet"],
 		"guard-for-in": "error",
 		"id-denylist": ["error", "err", "e", "cb", "callback"],
-		"id-length": ["error", {
+		"id-length": ["warn", {
 			min: 1,
 			max: 25,
 			properties: "never",
@@ -112,7 +112,7 @@ module.exports = {
 			skipComments: false
 		}],
 		"max-nested-callbacks": ["warn", 4],
-		"max-params": ["error", 4],
+		"max-params": ["warn", 4],
 		"max-statements": "off",
 		"multiline-comment-style": "off",
 		"new-cap": "off",
