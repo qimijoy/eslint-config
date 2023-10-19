@@ -158,15 +158,7 @@ module.exports = {
 		"vue/html-quotes": ["error", "double", {
 			avoidEscape: true,
 		}],
-		"vue/html-self-closing": ["error", {
-			html: {
-				void: "never",
-				normal: "always",
-				component: "always"
-			},
-			svg: "always",
-			math: "always"
-		}],
+		"vue/html-self-closing": "off",
 		"vue/max-attributes-per-line": "off",
 		"vue/multiline-html-element-content-newline": ["error", {
 			ignoreWhenEmpty: true,
