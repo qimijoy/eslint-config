@@ -5,13 +5,15 @@ A package with ESLint configurations. The goal is to unify ESlint configurations
 ### JS
 1. Install package via npm:
 ```
-npm i -D @babel/preset-env @babel/eslint-parser @qimijoy/eslint-config
+npm i -D @babel/preset-env @babel/eslint-parser @qimijoy/eslint-config eslint-plugin-jsdoc
 ```
 
 2. Add the required configuration in ESlint configuration file in your project:
 ```
 import babelParser from '@babel/eslint-parser';
-import primaryConfig from '@qimijoy/eslint-config/configs/primary';
+import jsdoc from 'eslint-plugin-jsdoc';
+import primaryConfig from '@qimijoy/eslint-config/configs/primary.js';
+import jsdocConfig from '@qimijoy/eslint-config/configs/jsdocConfig.js';
 ...
 {
 	files: ['**/*.js'],
@@ -26,8 +28,10 @@ import primaryConfig from '@qimijoy/eslint-config/configs/primary';
 			},
 		},
 	},
+	plugins: { jsdoc },
 	rules: {
 		...primaryConfig.rules,
+		...jsdocConfig.rules,
 	},
 },
 ```
@@ -35,28 +39,28 @@ import primaryConfig from '@qimijoy/eslint-config/configs/primary';
 ### Cypress
 1. Install package via npm:
 ```
-npm i -D eslint-plugin-vue vue-eslint-parser @babel/eslint-parser @qimijoy/eslint-config
+npm i -D eslint-plugin-cypress @qimijoy/eslint-config 
 ```
 
 2. Add the required configuration in ESlint configuration file in your project:
 ```
 import cypress from 'eslint-plugin-cypress';
-import cypressConfig from '@qimijoy/eslint-config/configs/cypressConfig';
+import cypressConfig from '@qimijoy/eslint-config/configs/cypressConfig.js';
 ...
 {
-files: ['**/*.spec.js'],
-plugins: { cypress },
-rules: {
-...cypress.configs.recommended.rules,
-...cypressConfig.rules,
-},
+	files: ['**/*.spec.js'],
+	plugins: { cypress },
+	rules: {
+		...cypressConfig.rules,
+		'no-unused-expressions': 'off', // exlude warnings from "expect" expression
+	},
 },
 ```
 
 ### Vue
 1. Install package via npm:
 ```
-npm i -D eslint-plugin-cypress @qimijoy/eslint-config 
+npm i -D eslint-plugin-vue vue-eslint-parser @babel/eslint-parser @qimijoy/eslint-config
 ```
 
 2. Add the required configuration in ESlint configuration file in your project:
@@ -64,7 +68,7 @@ npm i -D eslint-plugin-cypress @qimijoy/eslint-config
 import vue from 'eslint-plugin-vue';
 import vueParser from 'vue-eslint-parser';
 import babelParser from '@babel/eslint-parser';
-import vueConfig from '@qimijoy/eslint-config/configs/vueConfig';
+import vueConfig from '@qimijoy/eslint-config/configs/vueConfig.js';
 ...
 // Vue-файлы
 {
